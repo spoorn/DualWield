@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "dualwield",
+  "version": "${version}",
+  "name": "DualWield",
+  "description": "Adds Dual Wield mechanics and enchantment",
+  "authors": [
+    "spoorn"
+  ],
+  "contact": {
+    "website": "https://www.curseforge.com/minecraft/mc-mods/spoorns-dual-wield"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/dualwield/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.spoorn.dualwield.client.DualWieldClient"
+    ],
+    "main": [
+      "org.spoorn.dualwield.DualWield"
+    ]
+  },
+  "mixins": [
+    "dualwield.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.16.1"
+  }
+}
