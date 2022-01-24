@@ -61,7 +61,7 @@ public class PlayerEntityMixin {
         if (attributeModifiers.containsKey(EntityAttributes.GENERIC_ATTACK_DAMAGE)) {
                 attributeModifiers.get(EntityAttributes.GENERIC_ATTACK_DAMAGE)
                                 .forEach((entityAttributeModifier -> {
-                                damage.updateAndGet(v -> new Float((float)(v + entityAttributeModifier.getValue())));
+                                damage.updateAndGet(v -> (float) (v + entityAttributeModifier.getValue()));
                                 //log.error("### updating with={}", entityAttributeModifier.getValue());
                                     }));
             }
