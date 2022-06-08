@@ -14,7 +14,7 @@ public class DualWieldEnchantment extends Enchantment {
     public static final Identifier DUAL_WIELD_ID = new Identifier(DualWield.MODID, "dualwield");
 
     public DualWieldEnchantment() {
-        this(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        this(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     public DualWieldEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
