@@ -1,8 +1,9 @@
 package org.spoorn.dualwield.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.spoorn.dualwield.config.ModConfig;
 
 public class EnchantmentRegistry {
@@ -19,6 +20,6 @@ public class EnchantmentRegistry {
     }
 
     private static <T extends Enchantment> T register(Identifier identifier, T enchantment) {
-        return Registry.register(Registry.ENCHANTMENT, identifier, enchantment);
+        return Registry.register(Registries.ENCHANTMENT, identifier, enchantment);
     }
 }
